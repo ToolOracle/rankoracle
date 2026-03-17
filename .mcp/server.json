@@ -1,37 +1,14 @@
 {
   "name": "RankOracle",
-  "description": "SEO Intelligence MCP Server — 13 tools for keyword research, SERP analysis, domain audits, competitor gaps, on-page optimization. First standalone SEO MCP. Credit-based pricing.",
-  "url": "https://mcp.tooloracle.io/mcp/",
-  "version": "1.2.0",
-  "publisher": {
-    "name": "ToolOracle",
-    "url": "https://tooloracle.io"
-  },
-  "tools": [
-    {"name": "keyword_research", "description": "Research keyword volume, difficulty, CPC, trends"},
-    {"name": "check_ranking", "description": "Check where a domain ranks for a keyword"},
-    {"name": "serp_snapshot", "description": "Get top 10 Google results for a keyword"},
-    {"name": "domain_overview", "description": "Domain SEO overview with position distribution"},
-    {"name": "content_score", "description": "On-page SEO quality score with recommendations"},
-    {"name": "competitor_gap", "description": "Find keywords competitor ranks for but you don't"},
-    {"name": "title_optimizer", "description": "Title tag analysis and optimization suggestions"},
-    {"name": "meta_generator", "description": "Meta title and description audit and generation"},
-    {"name": "heading_analysis", "description": "H1-H4 heading structure analysis"},
-    {"name": "rank_tracker", "description": "Track positions for multiple keywords at once"},
-    {"name": "serp_alert", "description": "SERP position change tracking over time"},
-    {"name": "backlink_check", "description": "Backlink and referring domain summary"},
-    {"name": "health_check", "description": "Server health, pricing info, tool status"}
-  ],
+  "description": "SEO Intelligence \u2014 13 tools, unit-based pricing (2-15 units), x402 USDC micropayments on Base.",
+  "url": "https://tooloracle.io/mcp/",
+  "x402": "https://tooloracle.io/x402/rank/mcp/",
+  "version": "2.0.0",
+  "tools": 13,
   "pricing": {
-    "model": "credit-based",
-    "currency": "USD",
-    "tiers": {
-      "free": {"price": 0, "credits": 50},
-      "starter": {"price": 49, "credits": 500},
-      "pro": {"price": 149, "credits": 2000},
-      "agency": {"price": 349, "credits": 6000}
-    }
-  },
-  "connect": "npx -y mcp-remote https://mcp.tooloracle.io/mcp/",
-  "health": "https://mcp.tooloracle.io/health"
+    "unit": "$0.01",
+    "range": "$0.02-$0.15",
+    "network": "base",
+    "currency": "USDC"
+  }
 }
