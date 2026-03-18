@@ -4,6 +4,8 @@
 
 **Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
 
+[![RankOracle MCP server](https://glama.ai/mcp/servers/ToolOracle/rankoracle/badges/card.svg)](https://glama.ai/mcp/servers/ToolOracle/rankoracle)
+
 ## Connect in 30 seconds
 
 ```bash
