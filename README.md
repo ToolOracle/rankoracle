@@ -1,60 +1,61 @@
-# RankOracle — SEO Intelligence MCP Server
+# 🏆 rankOracle
 
-> Real-time keyword research, SERP analysis, domain audits, competitor gaps, and on-page optimization. 13 tools, unit-based pricing.
+**Utility MCP Server** — 0 tools | Part of [ToolOracle](https://tooloracle.io)
 
-**Part of [ToolOracle](https://tooloracle.io) — Policy-enforced, tier-gated, usage-metered tool execution**
+![Tools](https://img.shields.io/badge/MCP_Tools-0-10B898?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-00C853?style=flat-square)
+![Tier](https://img.shields.io/badge/Tier-Free-2196F3?style=flat-square)
 
-## Connect in 30 seconds
+## Quick Connect
 
 ```bash
-npx -y mcp-remote https://tooloracle.io/mcp/
+# Claude Desktop / Cursor / Windsurf
+npx -y mcp-remote https://tooloracle.io/rank/mcp/
 ```
 
-## x402 Pay-per-call (for autonomous AI agents)
-
-No account, no API key — just USDC on Base.
-
+```json
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "rankoracle": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://tooloracle.io/rank/mcp/"]
+    }
+  }
+}
 ```
-POST https://tooloracle.io/x402/rank/mcp/
-→ 402: structured denial with pricing + upgrade path
-→ Send USDC to 0x4a4B1F45...on Base
-→ Retry with X-PAYMENT: 0x{tx_hash}
-→ Units auto-credited, tool executed, balance returned
-```
 
-**Discovery:** `GET https://tooloracle.io/x402/`
+## Tools (0)
 
-## 13 Tools · Unit-based pricing (1 unit = $0.01)
+| Tool | Description |
+|------|-------------|
 
-| Tool | Units | Price | Tier |
-|------|-------|-------|------|
-| `keyword_research` | 15 | $0.15 | Premium |
-| `competitor_gap` | 8 | $0.08 | Deep |
-| `domain_overview` | 5 | $0.05 | Deep |
-| `content_score` | 3 | $0.03 | Standard |
-| `rank_tracker` | 3 | $0.03 | Standard |
-| `check_ranking` | 2 | $0.02 | Standard |
-| `serp_snapshot` | 2 | $0.02 | Standard |
-| `heading_analysis` | 2 | $0.02 | Standard |
-| `title_optimizer` | 2 | $0.02 | Standard |
-| `meta_generator` | 2 | $0.02 | Standard |
-| `serp_alert` | 2 | $0.02 | Standard |
-| `backlink_check` | 2 | $0.02 | Standard |
-| `health_check` | 0 | free | — |
+## Pricing
 
-## Tier gating
+| Tier | Rate Limit | Price |
+|------|-----------|-------|
+| Free | 100 calls/day | €0 |
+| Pro | 10,000 calls/day | €29/month |
+| Enterprise | Unlimited | Custom |
 
-| Tier | Max/call | Blocked |
-|------|----------|---------|
-| Free ($0) | 3 units | keyword_research, competitor_gap |
-| Starter ($49/mo) | 8 units | keyword_research |
-| Pro ($149/mo) | 15 units | none |
-| Agency ($349/mo) | 15 units | none |
-| x402 pay-per-call | 15 units | none |
+> Free tier includes all tools with rate limiting. Upgrade for higher limits and priority support.
 
-Every call is policy-checked, tier-gated, and economically enforced.
+## Part of ToolOracle
+
+rankOracle is one of **42 specialized MCP servers** in the [ToolOracle](https://tooloracle.io) ecosystem — the largest collection of production-ready MCP tools for AI agents.
+
+
+
+**Related Oracles:**
+- [FeedOracle](https://feedoracle.io) — Evidence-grade compliance data infrastructure
+- [ToolOracle](https://tooloracle.io) — 42 Oracles, 390+ MCP Tools
 
 ## Links
 
-- [ToolOracle Platform](https://tooloracle.io) · [x402 Gateway](https://tooloracle.io/x402/)
-- [ShopOracle](https://github.com/ToolOracle/shoporacle) · [MemeOracle](https://github.com/ToolOracle/memeoracle) · [YieldOracle](https://github.com/ToolOracle/yieldoracle) · [SmartMoneyOracle](https://github.com/ToolOracle/smartmoneyoracle)
+- 🌐 Live: `https://tooloracle.io/rank/mcp/`
+- 📚 Docs: [tooloracle.io/docs](https://tooloracle.io/docs)
+- 🏠 Platform: [tooloracle.io](https://tooloracle.io)
+
+---
+
+*Built by [FeedOracle](https://feedoracle.io) — Evidence by Design*
