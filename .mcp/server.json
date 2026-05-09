@@ -10,5 +10,11 @@
     "range": "$0.02-$0.15",
     "network": "base",
     "currency": "USDC"
-  }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tooloracle.io/x402/rank/mcp/"
+    }
+  ]
 }
